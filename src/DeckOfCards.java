@@ -29,7 +29,7 @@ public class DeckOfCards {
                 continue;
             }else {
                 temp = deckToShuffle.get(randomOne);
-                deckToShuffle.set(randomOne, deck.get(randomTwo));
+                deckToShuffle.set(randomOne, deckToShuffle.get(randomTwo));
                 deckToShuffle.set(randomTwo, temp);
             }
         }

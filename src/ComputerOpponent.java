@@ -26,8 +26,8 @@ public class ComputerOpponent {
         return opponentCards.get(0);
     }
 
-    public Card topCard() {
-        return opponentCards.get(0);
+    public Card getCard(int index) {
+        return opponentCards.get(index);
     }
 
     public String getName() {

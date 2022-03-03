@@ -34,8 +34,8 @@ public class PlayerOne {
         return this.playerCards;
     }
 
-    public Card topCard() {
-        return playerCards.get(0);
+    public Card getCard(int index) {
+        return playerCards.get(index);
     }
 
     public void setDeck(List<Card> deck) {
