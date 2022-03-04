@@ -6,8 +6,8 @@ public class GameOfWar {
 
     private Scanner keyboard = new Scanner(System.in);
     private DeckOfCards deck = new DeckOfCards();
-    private PlayerOne player;
-    private ComputerOpponent opponent;
+    private Player player;
+    private Player opponent;
     int roundsPlayed = 0;
 
     public GameOfWar() throws IOException {
@@ -23,7 +23,7 @@ public class GameOfWar {
         while(true) {
             try{
                 System.out.print("What is your name: ");
-                player = new PlayerOne(keyboard.nextLine());
+                player = new Player(keyboard.nextLine());
                 if(player.getName().isEmpty()) throw new InputMismatchException();
                 break;
             }catch (InputMismatchException e) {
@@ -36,7 +36,7 @@ public class GameOfWar {
         while(true) {
             try{
                 System.out.print("What is the computers name: ");
-                opponent = new ComputerOpponent(keyboard.nextLine());
+                opponent = new Player(keyboard.nextLine());
                 if(opponent.getName().isEmpty()) throw new InputMismatchException();
                 break;
             }catch (InputMismatchException e) {

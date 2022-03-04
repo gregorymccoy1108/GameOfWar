@@ -15,5 +15,9 @@ public class Card {
     public int getRank(Card cardToCheck) {
         return cardToCheck.rank.getValue(cardToCheck.rank);
     }
+//    @Override
+//    public int Compare() {
+//
+//    }
 
 }

@@ -36,7 +36,7 @@ public class DeckOfCards {
         return deckToShuffle;
     }
 
-    public void dealCards(PlayerOne player, ComputerOpponent opponent) {
+    public void dealCards(Player player, Player opponent) {
         shuffleCards(1000, deck);
         while(!deck.isEmpty()) {
             player.addCard(deck.remove(0));
