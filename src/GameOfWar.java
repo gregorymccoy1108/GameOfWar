@@ -98,6 +98,11 @@ public class GameOfWar {
             System.out.println("The opponent does not have enough cards to declare war!");
             announceWinner(player.getName());
         }else {
+            System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            System.out.println("----------------War has been declared!!!---------------");
+            System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            System.out.println(player.getName() + " declared war with: " + player.getCard(4).toString());
+            System.out.println(opponent.getName() + " declared war with: " + opponent.getCard(4).toString());
             warCard = deck.comparison(player.getCard(4), opponent.getCard(4));
         }
         warDecision(warCard);
